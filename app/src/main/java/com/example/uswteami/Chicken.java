@@ -67,8 +67,8 @@ public class Chicken extends AppCompatActivity {
     private int a = 0;
     private int s;
 
-    private Button back;
-    private List<Button> btns = new ArrayList<>();
+    private ImageButton back;
+    private List<ImageButton> btns = new ArrayList<>();
     Geocoder m = new Geocoder(Chicken.this);
     double lat1 = 0, lon1 = 0, lat2 = 0, lon2 = 0;
 
@@ -84,7 +84,7 @@ public class Chicken extends AppCompatActivity {
         mArrayList = new ArrayList<>();
         mVoiceBtn = (ImageButton) findViewById(R.id.voiceBtn);
 
-        back = (Button)findViewById(R.id.back);
+        back = (ImageButton) findViewById(R.id.back);
         btns.add(back);
 
         final MediaPlayer player_s = MediaPlayer.create(this, R.raw.start);

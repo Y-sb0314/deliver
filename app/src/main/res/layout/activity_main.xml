@@ -66,9 +66,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="110dp"
                     android:layout_height="110dp"
-                    app:cardCornerRadius="45dp"
                     android:layout_marginLeft="9dp"
-                    android:layout_marginRight="3dp">
+                    android:layout_marginRight="3dp"
+                    app:cardCornerRadius="45dp">
 
                     <ImageButton
                         android:id="@+id/btn_chicken"
@@ -85,18 +85,18 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="110dp"
                     android:layout_height="110dp"
-                    app:cardCornerRadius="45dp"
                     android:layout_marginLeft="3dp"
-                    android:layout_marginRight="3dp">
+                    android:layout_marginRight="3dp"
+                    app:cardCornerRadius="45dp">
 
                     <ImageButton
                         android:id="@+id/btn_pizza"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
-                        android:layout_weight="3"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
+                        android:layout_weight="3"
                         android:background="@drawable/roundedbutton"
                         android:scaleType="fitXY"
                         android:src="@drawable/pizza2" />
@@ -106,9 +106,9 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="110dp"
                     android:layout_height="110dp"
-                    app:cardCornerRadius="45dp"
                     android:layout_marginLeft="3dp"
-                    android:layout_marginRight="9dp">
+                    android:layout_marginRight="9dp"
+                    app:cardCornerRadius="45dp">
 
                     <ImageButton
                         android:id="@+id/btn_jajang"
@@ -128,33 +128,32 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/bazzi"
                     android:layout_weight="1"
+                    android:fontFamily="@font/bazzi"
+                    android:gravity="center"
                     android:text="치킨"
-                    android:gravity="center"
-                    android:textSize="30dp"
                     android:textColor="#000000"
-                    />
+                    android:textSize="30dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/bazzi"
                     android:layout_weight="1"
+                    android:fontFamily="@font/bazzi"
+                    android:gravity="center"
                     android:text="피자"
-                    android:gravity="center"
-                    android:textSize="30dp"
-                    android:textColor="#000000"/>
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/bazzi"
                     android:layout_weight="1"
-                    android:text="중식"
+                    android:fontFamily="@font/bazzi"
                     android:gravity="center"
-                    android:textSize="30dp"
-                    android:textColor="#000000"/>
+                    android:text="중식"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
 
             </LinearLayout>
 
@@ -163,13 +162,12 @@
                 android:id="@+id/aa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/bazzi"
-                android:background="@drawable/buttonround"
                 android:layout_weight="1"
+                android:background="@drawable/buttonround"
+                android:fontFamily="@font/bazzi"
                 android:text="주문내역"
-                android:textSize="30dp"
-                android:textColor="#000000"/>
-
+                android:textColor="#000000"
+                android:textSize="30dp" />
 
 
         </LinearLayout>

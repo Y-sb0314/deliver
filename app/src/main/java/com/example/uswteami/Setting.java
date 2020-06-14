@@ -18,6 +18,7 @@ import android.widget.Toast;
 import android.speech.tts.TextToSpeech.OnInitListener;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class Setting extends AppCompatActivity implements OnInitListener {
@@ -25,9 +26,11 @@ public class Setting extends AppCompatActivity implements OnInitListener {
     private static final int REQUEST_CODE_SPEECH_INPUT = 1000;
 
     private ArrayList<Button> bs = new ArrayList<>();
-    private Button placeLayoutChange, back, save;
+    private List<ImageButton> btns = new ArrayList<>();
+    private Button placeLayoutChange, save;
     private TextView placeLayout, text;
     private ImageButton mVoiceBtn;
+    private ImageButton back;
 
     private TextToSpeech myTTS;
     private static String place;
@@ -46,11 +49,11 @@ public class Setting extends AppCompatActivity implements OnInitListener {
         text = (TextView) findViewById(R.id.text);
         placeLayout = (TextView) findViewById(R.id.placeLayout);
         placeLayout.setText(place);
-        back = (Button)findViewById(R.id.back);
+        back = findViewById(R.id.back);
         save = (Button)findViewById(R.id.btn_save);
         mVoiceBtn = findViewById(R.id.voiceBtn);
         bs.add(placeLayoutChange);
-        bs.add(back);
+        btns.add(back);
         bs.add(save);
 
 
@@ -74,6 +77,9 @@ public class Setting extends AppCompatActivity implements OnInitListener {
         }
         for(int i = 0; i< bs.size(); i++){
             bs.get(i).setOnClickListener(onClick);
+        }
+        for(int i = 0; i< btns.size(); i++){
+            btns.get(i).setOnClickListener(onClick);
         }
     }
 
@@ -235,7 +241,7 @@ public class Setting extends AppCompatActivity implements OnInitListener {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    placeLayout.performClick();
+                    mVoiceBtn.performClick();
                 }
             }, 10000);
         }

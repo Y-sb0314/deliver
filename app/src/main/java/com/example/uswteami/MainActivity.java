@@ -374,6 +374,14 @@ public class MainActivity extends AppCompatActivity {
 
                             if(k == 0){
                                 myTTS.speak("주문 내역이 비어있습니다. 한 번이라도 결제승인을 하신 후 사용해주세요.", TextToSpeech.QUEUE_ADD, null);
+
+                                new Handler().postDelayed(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        player_s.start();
+                                        mVoiceBtn.performClick();
+                                    }
+                                }, 6000);
                             }else{
                                 Intent i = new Intent(MainActivity.this, Payment.class);
                                 i.setFlags(i.FLAG_ACTIVITY_CLEAR_TOP);

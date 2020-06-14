@@ -19,6 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Locale;
 
 public class Payment extends AppCompatActivity {
@@ -45,9 +46,10 @@ public class Payment extends AppCompatActivity {
 
     private int a=0;
     private String stt;
-    private Button back;
+    private ImageButton back;
     private Button var;
-    private ArrayList<Button> btns = new ArrayList<>();
+    private ArrayList<Button> bs = new ArrayList<>();
+    private List<ImageButton> btns = new ArrayList<>();
     private TextView payPrice;
     private String m;
     private int s;
@@ -70,10 +72,10 @@ public class Payment extends AppCompatActivity {
 
         payPrice = (TextView)findViewById(R.id.payPrice);
         mVoiceBtn = findViewById(R.id.voiceBtn);
-        back = (Button)findViewById(R.id.back);
+        back = (ImageButton)findViewById(R.id.back);
         var = (Button)findViewById(R.id.var);
         btns.add(back);
-        btns.add(var);
+        bs.add(var);
 
         final MediaPlayer player_s = MediaPlayer.create(this, R.raw.start);
 
@@ -159,9 +161,13 @@ public class Payment extends AppCompatActivity {
             });
 
         }
+        for(int i=0; i<bs.size(); i++){
+            bs.get(0).setOnClickListener(onClick);
+        }
         for(int i=0; i<btns.size(); i++){
             btns.get(0).setOnClickListener(onClick);
         }
+
 
         var.setOnClickListener(new View.OnClickListener() {
             @Override

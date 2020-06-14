@@ -90,7 +90,7 @@ public class Menu extends AppCompatActivity {
     HashMap<String, String> content_soda = new HashMap<>();
 
     private int a=0;
-    private Button pay;
+    private ImageButton pay;
     private int s;
 
     @Override
@@ -101,7 +101,7 @@ public class Menu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_layout);
 
-        pay = (Button)findViewById(R.id.pay);
+        pay = (ImageButton) findViewById(R.id.pay);
         mVoiceBtn = (ImageButton)findViewById(R.id.voiceBtn);
 
         final MediaPlayer player_s = MediaPlayer.create(this, R.raw.start);
