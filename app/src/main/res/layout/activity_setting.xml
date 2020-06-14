@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEFF">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/bazzi"
+            android:background="@drawable/buttonround"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_back"
+            />
+
+        <TextView
+            android:layout_width="324dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/bazzi"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="설정"
+            android:textSize="30dp"
+            android:textColor="#000000"/>
+
+        <ImageButton
+            android:id="@+id/voiceBtn"
+            android:layout_width="45dp"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonround"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_mic"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp">
+
+        <Button
+            android:id="@+id/placeLayoutChange"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:fontFamily="@font/bazzi"
+            android:background="@drawable/buttonround"
+            android:text="매장"
+            android:textSize="30dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/placeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:fontFamily="@font/bazzi"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/bazzi"
+        android:background="@drawable/buttonround"
+        android:text="저장"
+        android:textSize="35dp"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bazzi"
+        android:textSize="30dp"
+        android:textColor="#000000"/>
+
+
+</LinearLayout>
